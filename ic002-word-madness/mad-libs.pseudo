@@ -1,0 +1,11 @@
+
+Collect the words from the user
+    For each word
+        Prompt the user for the word
+        Display the type of word in the prompt (noun, verb, adj)
+    Store the responses
+
+Add the collected words into the story
+    Use list merge or template (or other method) to combine the words into the story
+
+Display the merged story out to the user
