@@ -1,6 +1,11 @@
-(ns cnc007-hello-codenewbies.core)
+(ns cnc007-hello-codenewbies.core
+  (:gen-class))
 
 (defn hello
   "Solution for all levels."
-  ([] '("Hello CodeNewbies!"))
-  ([& langs] (map #(str "Hello " % "!") (concat langs ["CodeNewbies"]))))
+  [langs]
+  (map #(str "Hello " % "!")
+       (concat langs ["CodeNewbies"])))
+
+(defn -main [& args]
+  (apply println (hello args)))
